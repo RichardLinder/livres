@@ -7,7 +7,7 @@ class Livre
     private float $prix;
     private Auteur $auteur;
 
-    public function __construct($titre , $nbp, $anne,$prix, $auteur)
+    public function __construct( string $titre ,int $nbp, int $annee, float $prix,  string $auteur)
     {
         $this->titre = $titre;
         $this->nombreDePage = $nbp;
