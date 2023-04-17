@@ -48,9 +48,9 @@ class Auteur
     {   
         
         $resultat="<h2> ".$this->nom . $this->prenom." </h2>" ;
-        foreach ($this->livres as $key) 
+        foreach ($this->livres as $livre) 
         {
-           $resultat= $resultat. $key->getInfo() ."<br>";
+           $resultat= $resultat. $livre->getInfo() ."<br>";
         }
 
         return $resultat;
